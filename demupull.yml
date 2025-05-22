@@ -1,0 +1,17 @@
+- name: anurag
+  host: localhost
+  task:
+    -name: hello msg
+    debug: 
+       msg: "debug hello msg"
+       
+    -name: hello msg
+    debug: 
+       var: ansible_hostname
+
+    -name: hello ubuntu version
+    debug: 
+       var: ansible_distribution
+       
+       
+       
